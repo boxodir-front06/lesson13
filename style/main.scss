@@ -29,6 +29,7 @@
   }
   .box1-text {
       position: absolute;
+      display: block;
       top: 15px;
       left: 30px;
       z-index: 9999;
@@ -38,7 +39,8 @@
         top: 10px;
         left: 340px;
     }
-    b{ top: 5px;
+    b{
+        top: 2px;
         position: absolute;
         left: 360px;
         color: rgb(77, 75, 75);
@@ -57,9 +59,36 @@
      font-weight: 900;
      font-size: 30px;
    } 
+  
     b{
         padding-top: 350px;
+        text-align: center;
         left: 23px;
         color:rgb(199, 175, 41);
+    }
+}
+@media only screen and (max-width: 600px) {
+   .box-text, h5, b{
+       font-size: 10px;
+   }
+}
+@media only screen and (min-width: 600px) {
+    .box-text, h5, b{
+        font-size: 12px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .box-text, h5, b{
+        font-size: 12px;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .box-text, h5, b{
+        font-size: 12px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .box-text, h5, b{
+        font-size: 20px;
     }
 }
